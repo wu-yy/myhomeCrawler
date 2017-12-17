@@ -13,7 +13,7 @@ sys.setdefaultencoding('utf-8')
 #开始执行seleum
 
 if __name__=='__main__':
-    Url = 'http://myhome.tsinghua.edu.cn/Netweb_List/Netweb_Home_Lose_List.html'
+    Url = 'http://example.com/Netweb_List/Netweb_Home_Lose_List.html'
 
     driver=webdriver.Firefox()
     driver.set_window_position(x=50,y=60)
