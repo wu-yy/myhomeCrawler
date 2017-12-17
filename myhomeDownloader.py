@@ -26,8 +26,8 @@ except:
 
 heades={
     'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-    'Host':'myhome.tsinghua.edu.cn',
-    'Referer':'http://myhome.tsinghua.edu.cn/',
+    'Host':'example.com',
+    'Referer':'http://example.com/',
     'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36',
     'Cookie':'ASP.NET_SessionId=jdmfslzfiraczya43d0bzvft; UM_distinctid=1605dbe944c108-022c92d31e70558-17357940-100200-1605dbe944d201; CNZZDATA3006115=cnzz_eid%3D5073117-1513396874-http%253A%252F%252Fmyhome.tsinghua.edu.cn%252F%26ntime%3D1513396874'
 }
@@ -37,7 +37,7 @@ def getHtml(url):
 
 if __name__=="__main__":
     print "开始下载"
-    lostUrl='http://myhome.tsinghua.edu.cn/Netweb_List/Netweb_Home_Lose_List.html'
+    lostUrl='http://example.com/Netweb_List/Netweb_Home_Lose_List.html'
     parms={
         '__EVENTARGUMENT': 3,
         '__EVENTTARGET': 'Netweb_Home_Lose_ListCtrl1$pager1',
@@ -73,7 +73,7 @@ if __name__=="__main__":
 
     while(page_nums>0):
         page_nums=page_nums-1
-        Url = 'http://myhome.tsinghua.edu.cn/Netweb_List/Netweb_Home_Lose_List.html'
+        Url = 'http://example.com/Netweb_List/Netweb_Home_Lose_List.html'
         lostSoup = getHtml(Url)
         #分别是丢失的物品名、丢失时间、丢失联系方式、丢失的具体描述、丢失的状态
         Lname=[]
